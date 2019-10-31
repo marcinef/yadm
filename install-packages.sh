@@ -55,6 +55,7 @@ sudo pacman -Sy --noconfirm \
   telepathy-glib \
   gnome-keyring\
   libvncserver \
+  ocsinventory-agent \
   yay 
 	
 
