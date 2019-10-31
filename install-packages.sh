@@ -85,6 +85,7 @@ yay -Sy --noconfirm \
 	stow \
 	urxvt-resize-font-git \
 	visual-studio-code-bin \
+	signal \
 	xclip
 
 
