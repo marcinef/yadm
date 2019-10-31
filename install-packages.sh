@@ -3,9 +3,9 @@
 echo "Installing packages"
 
 sudo pacman -Sy --noconfirm \
-	bluez \
-	bluez-libs \
-	bluez-utils \
+  bluez \
+  bluez-libs \
+  bluez-utils \
   vim \
   virt-manager \
   terminator \
@@ -42,16 +42,16 @@ sudo pacman -Sy --noconfirm \
   firewalld \
   pycharm-community-edition \
   yubikey-personalization \
-	ebtables \
-	libvirt \
-	qemu-headless \
-	rofi \
-	sysstat \
-	the_silver_searcher \
-	ttf-dejavu
-	ttf-font-icons \
-	ttf-inconsolata \
-	xtitle \
+  ebtables \
+  libvirt \
+  qemu-headless \
+  rofi \
+  sysstat \
+  the_silver_searcher \
+  ttf-dejavu
+  ttf-font-icons \
+  ttf-inconsolata \
+  xtitle \
   telepathy-glib \
   gnome-keyring\
   libvncserver \
@@ -66,7 +66,7 @@ yay -Sy --noconfirm \
 	google-cloud-sdk \
 	flameshot \
 	#kubectl-bin \
-  minikube \
+        minikube \
 	pass \
 	pavucontrol \
 	pcsclite \
