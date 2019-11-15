@@ -67,9 +67,9 @@ yay -Sy --noconfirm \
 	google-cloud-sdk \
 	flameshot \
 	#kubectl-bin \
-        minikube \
+    #    minikube \
 	pass \
-	pavucontrol \
+#	pavucontrol \
 	pcsclite \
 	powerline-fonts-git \
 	pwgen \
@@ -86,8 +86,8 @@ yay -Sy --noconfirm \
 	stow \
 	urxvt-resize-font-git \
 	visual-studio-code-bin \
-	signal \
+	signal-desktop-bin \
 	xclip
 
 
-pipsi install ansible
+#pipsi install ansible
