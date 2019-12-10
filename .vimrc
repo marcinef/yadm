@@ -2,7 +2,7 @@
 "Version 5.5
 
 "type ":help X" for help on a command, e.g. ":help ts" for tabstop
-
+set bg=dark
 set nocp
 
 set expandtab   "replace <Tab> with spaces (except in Makefiles, see below)
