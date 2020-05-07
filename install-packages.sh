@@ -4,6 +4,7 @@ echo "Installing packages"
 
 sudo pacman -Sy --noconfirm \
   bluez \
+  gawk \
   git-crypt \
   bluez-libs \
   pavucontrol \
