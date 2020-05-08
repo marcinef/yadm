@@ -2,7 +2,7 @@
 
 echo "Installing YAY packages"
 
-yay -Sy --noconfirm \
+yay -Sy --noconfirm --needed\
 	acroread \
     docker \
 	docker-machine-driver-kvm2 \
@@ -25,17 +25,14 @@ yay -Sy --noconfirm \
 	stow \
 	urxvt-resize-font-git \
 	visual-studio-code-bin \
-	signal-desktop-bin \
     ocsinventory-agent \
     dropbox \
+    zoom \
+    nagstamon \
+    pass \
 	xclip
 
 
 ##pipsi install ansible
-#   zoom \
-#   nagstamon \
-	
-#	pass \
-	#tflint \
-    #ttf-symbola \
-    #    minikube \
+	# signal-desktop-bin \
+    # minikube \

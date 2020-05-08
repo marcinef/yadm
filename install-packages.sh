@@ -2,7 +2,7 @@
 
 echo "Installing packages"
 
-sudo pacman -Sy --noconfirm \
+sudo pacman -Sy --noconfirm --needed\
   bluez \
   gawk \
   git-crypt \
@@ -44,13 +44,9 @@ sudo pacman -Sy --noconfirm \
   yubikey-personalization \
   ebtables \
   libvirt \
-  qemu-headless \
   rofi \
   sysstat \
-  the_silver_searcher
-  ttf-dejavu
-  ttf-font-icons \
-  ttf-inconsolata \
+  the_silver_searcher \
   xtitle \
   telepathy-glib \
   gnome-keyring\
