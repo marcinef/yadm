@@ -106,6 +106,9 @@ alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
 alias np='nano -w PKGBUILD'
 alias more=less
+alias tf-snow-docker='docker pull registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt && docker run -it --rm -v $HOME/git/terragrunt-snowflake-services/:/home/mintel/terragrunt-snowflake-services -v $HOME/.aws/:/home/mintel/.aws -v $HOME/key/:/home/mintel/.ssh registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt bash'
+alias tf-snow-test-docker='docker pull registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt && docker run -it --rm -v $HOME/git/terragrunt-snowflake-services-minteltest/:/home/mintel/terragrunt-snowflake-services-mintel-test -v $HOME/.aws/:/home/mintel/.aws -v $HOME/key/:/home/mintel/.ssh registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt bash'
+
 
 xhost +local:root > /dev/null 2>&1
 
@@ -297,3 +300,9 @@ source <(kubectl completion bash)
 
 # added by pipsi (https://github.com/mitsuhiko/pipsi)
 export PATH="/home/$USER/.local/bin:$PATH"
+
+parse_git_branch() {
+     git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+export PS1="\u@\h \[\e[32m\]\w \[\e[91m\]\$(parse_git_branch)\[\e[00m\]$ "
+

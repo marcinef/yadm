@@ -4,6 +4,7 @@ echo "Installing packages"
 
 sudo pacman -Sy --noconfirm --needed\
   bluez \
+  clipit \
   gawk \
   git-crypt \
   bluez-libs \
