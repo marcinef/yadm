@@ -108,6 +108,7 @@ alias np='nano -w PKGBUILD'
 alias more=less
 alias tf-snow-docker='docker pull registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt && docker run -it --rm -v $HOME/git/terragrunt-snowflake-services/:/home/mintel/terragrunt-snowflake-services -v $HOME/.aws/:/home/mintel/.aws -v $HOME/key/:/home/mintel/.ssh registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt bash'
 alias tf-snow-test-docker='docker pull registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt && docker run -it --rm -v $HOME/git/terragrunt-snowflake-services-minteltest/:/home/mintel/terragrunt-snowflake-services-mintel-test -v $HOME/.aws/:/home/mintel/.aws -v $HOME/key/:/home/mintel/.ssh registry.gitlab.com/mintel/infra/terraform/snowflake-docker-terragrunt bash'
+alias git-mr='git push --set-upstream origin $(git rev-parse --abbrev-ref HEAD) -o merge_request.create'
 
 
 xhost +local:root > /dev/null 2>&1
@@ -296,7 +297,7 @@ _pass()
 }
 
 complete -o filenames -F _pass pass
-source <(kubectl completion bash)
+#source <(kubectl completion bash)
 
 # added by pipsi (https://github.com/mitsuhiko/pipsi)
 export PATH="/home/$USER/.local/bin:$PATH"
